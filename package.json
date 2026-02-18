@@ -1,0 +1,37 @@
+{
+    "name": "krevetka",
+    "version": "0.1.0",
+    "description": "AI coding assistant for any OpenAI-compatible endpoint",
+    "type": "module",
+    "bin": {
+        "krevetka": "./dist/index.js"
+    },
+    "scripts": {
+        "dev": "tsx src/index.ts",
+        "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --outfile=dist/index.js --format=esm --banner:js='#!/usr/bin/env node' --packages=external",
+        "start": "node dist/index.js",
+        "typecheck": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@inquirer/prompts": "^7.3.2",
+        "chalk": "^5.4.1",
+        "commander": "^13.1.0",
+        "openai": "^4.86.2",
+        "ora": "^8.2.0",
+        "zod": "^3.24.2"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.5",
+        "esbuild": "^0.25.0",
+        "tsx": "^4.19.2",
+        "typescript": "^5.7.3"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "pnpm": {
+        "onlyBuiltDependencies": [
+            "esbuild"
+        ]
+    }
+}

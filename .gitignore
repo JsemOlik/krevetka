@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.krevetka.json
+*.local
+.env
+.env.*
+!.env.example

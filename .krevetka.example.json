@@ -1,0 +1,25 @@
+{
+    "_comment": "Copy this to .krevetka.json in your project root or to ~/.krevetka/config.json for global config",
+    "examples": {
+        "openrouter": {
+            "baseUrl": "https://openrouter.ai/api/v1",
+            "apiKey": "sk-or-v1-...",
+            "model": "anthropic/claude-3.5-sonnet"
+        },
+        "lmstudio": {
+            "baseUrl": "http://localhost:1234/v1",
+            "apiKey": "lm-studio",
+            "model": "qwen2.5-coder-7b-instruct"
+        },
+        "ollama": {
+            "baseUrl": "http://localhost:11434/v1",
+            "apiKey": "ollama",
+            "model": "qwen2.5-coder:7b"
+        }
+    },
+    "baseUrl": "https://openrouter.ai/api/v1",
+    "apiKey": "sk-or-v1-...",
+    "model": "anthropic/claude-3.5-sonnet",
+    "maxTokens": 8192,
+    "systemPromptExtra": ""
+}
